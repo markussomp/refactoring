@@ -1,19 +1,26 @@
 package rental;
 
-import static org.junit.Assert.fail;
-
-import org.junit.Before;
 import org.junit.Test;
 
 public class RentalPriceCalculatorTest {
-	
-	@Before
-	public void beforeEachTest() {
-		// this method is called before each test
-	}
+
+	private RentalPriceCalculator calculator;
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void CalculatePrice(){
+		calculator = new RentalPriceCalculator();
+		calculator.price(20,4,3,false,true,true);
 	}
+
+    @Test
+    public void CalculatePrice1(){
+        calculator = new RentalPriceCalculator();
+        calculator.price(21,4,3,false,true,true);
+    }
+
+    @Test
+    public void CalculatePrice2(){
+        calculator = new RentalPriceCalculator();
+        calculator.price(22,4,3,false,true,true);
+    }
 }
